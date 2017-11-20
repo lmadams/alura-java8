@@ -6,6 +6,7 @@ import java.time.LocalTime;
 import java.time.Month;
 import java.time.Period;
 import java.time.YearMonth;
+import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class Datas {
@@ -14,7 +15,7 @@ public class Datas {
     LocalDate hoje = LocalDate.now();
     System.out.println(hoje);
 
-    LocalDate olimpiadas = LocalDate.of(2022, Month.JUNE, 5);
+    LocalDate olimpiadas = LocalDate.of(2099, Month.JANUARY, 25);
 
     Period periodo = Period.between(hoje, olimpiadas);
     System.out.println(periodo.getDays());
@@ -34,5 +35,8 @@ public class Datas {
 
     LocalTime intervalo = LocalTime.of(15, 30);
     System.out.println(intervalo);
+
+    ZonedDateTime horaTimeZone = ZonedDateTime.now();
+    System.out.println(horaTimeZone);
   }
 }
